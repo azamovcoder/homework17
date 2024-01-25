@@ -1,0 +1,51 @@
+.container-ab{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 33.333%;
+    overflow: hidden;
+}
+
+.card .ab-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    filter: blur(4px);
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+}
+.ab-2{
+    max-width: 128px;
+    margin: 0 auto;
+}
+
+.card:hover .ab-1 {
+    width: 130%;
+    height: 130%;
+    filter: blur(0px);
+}
+
+.card h3 {
+    font-size: 35px;
+    color: white;
+}
+
+@media(max-width:1200px){
+    .card{
+        width: 100%;
+    }
+}
